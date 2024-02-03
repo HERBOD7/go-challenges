@@ -1,3 +1,10 @@
+//input
+//5 4
+//3 4 1 2 2
+
+//output
+//2
+
 package main
 
 import (
