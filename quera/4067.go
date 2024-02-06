@@ -25,6 +25,7 @@ func main() {
 		x, _ := strconv.Atoi(location[0])
 		y, _ := strconv.Atoi(location[1])
 
+		// TODO: fix logic
 		if x%2 == 0 && y%2 == 0 {
 			fmt.Printf("%d\n", x+y)
 		} else if x%2 != 0 && y%2 != 0 {
