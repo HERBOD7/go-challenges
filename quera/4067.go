@@ -25,11 +25,14 @@ func main() {
 		x, _ := strconv.Atoi(location[0])
 		y, _ := strconv.Atoi(location[1])
 
-		// TODO: fix logic
-		if x%2 == 0 && y%2 == 0 {
-			fmt.Printf("%d\n", x+y)
-		} else if x%2 != 0 && y%2 != 0 {
-			fmt.Printf("%d\n", x+y-1)
+		if x-y == 0 || x-y == 2 {
+			if x%2 == 0 && y%2 == 0 {
+				fmt.Printf("%d\n", x+y)
+			} else if x%2 != 0 && y%2 != 0 {
+				fmt.Printf("%d\n", x+y-1)
+			} else {
+				fmt.Printf("%d\n", -1)
+			}
 		} else {
 			fmt.Printf("%d\n", -1)
 		}
